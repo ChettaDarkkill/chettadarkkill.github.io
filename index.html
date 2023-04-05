@@ -60,6 +60,8 @@
       await liff.init({ liffId: '1660829609-xz8VwZ73' });
       if (!liff.isLoggedIn()) {
         liff.login();
+      } else {
+        scanCodeV2()
       }
     }
     main();
